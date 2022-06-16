@@ -8,6 +8,7 @@ const CreatePost = ({ isAuth }) => {
 
   const [title, setTitle] = useState("");
   const [postText, setPostText] = useState("");
+  const createdAt = new Date();
 
   const postsCollectionRef = collection(db, "posts");
   let navigate = useNavigate();
@@ -16,6 +17,7 @@ const CreatePost = ({ isAuth }) => {
     await addDoc(postsCollectionRef, {
         title,
         postText,
+        createdAt,
         author: { name: auth.currentUser.displayName, id: auth.currentUser.uid }
     });
     navigate("/");

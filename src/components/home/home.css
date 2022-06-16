@@ -1,5 +1,16 @@
 .homePage {
-    margin: 30px;
+   padding: 30px;
+   background-image: url('/Users/nicklona/trading-blog/public/images/5m.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  z-index: -1000;
+  position: relative;
+}
+
+.posts {
+    z-index: 1000;
+    position: absolute;
 }
 
 .post {
