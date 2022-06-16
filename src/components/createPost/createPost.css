@@ -1,0 +1,85 @@
+.createPostPage {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: grid;
+    place-items: center;
+    padding-bottom: 80px;
+}
+
+.createPostContainer {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 0px rgb(97, 97, 97);
+    border-radius: 10px;
+}
+
+.createPostContainer h1 {
+    text-align: center;
+    font-weight: 400;
+}
+  
+.createPostContainer label {
+    font-size: 25px;
+}
+
+
+.createPostContainer .inputGroup {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.inputGroup input {
+
+}
+
+.inputGroup textarea {
+    height: 150px;
+}
+
+.createPostContainer button {
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: white;
+  }
+
+ .createPostContainer button:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .createPostContainer button:active {
+    background-color: #eeeeee;
+  }
+  
+  .createPostContainer button:focus {
+    outline: none;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25),
+    0 0 0 3px #c8dafc;
+  }
+  
+  .createPostContainer button:disabled {
+    filter: grayscale(100%);
+    background-color: #ebebeb;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+  }
+  
