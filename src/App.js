@@ -6,6 +6,7 @@ import Login from './components/login/Login';
 import { useState } from 'react';
 import { signOut } from 'firebase/auth';
 import { auth } from './firebase-config';
+import StockTickers from './components/stockTickers/StockTickers';
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -25,10 +26,11 @@ const App = () => {
         ) : (
           <>
             <Link to="/createpost"> Create Post </Link>
-            <button onClick={signUserOut}> Log Out </button>
+            <button className="logOutButton" onClick={signUserOut}> Log Out </button>
           </>
         )}
       </nav>
+      <StockTickers />
       <Routes>
         <Route path="/" element={<Home isAuth={isAuth}/>} />
         <Route path="/createpost" element={<CreatePost isAuth={isAuth}/>} />
