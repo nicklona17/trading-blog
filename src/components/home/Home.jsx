@@ -32,10 +32,10 @@ const Home = ({ isAuth }) => {
       <div className="posts">
         {postList.map((post) => {
           return (
-            <div className='post'>
+            <div className='post' key={post.id}>
               <div className='postHeader'>
                 <div className="title">
-                  <h1> {post.title}</h1>
+                  <h1>{post.title}</h1>
                 </div>
                 <div className="deletePost">
                   {isAuth && post.author.id === auth.currentUser.uid && (
@@ -54,7 +54,7 @@ const Home = ({ isAuth }) => {
                 {post.postText}
               </div>
               <h4>
-                {post.author.name}
+                @{post.author.name}
               </h4>
             </div>
           )
