@@ -1,17 +1,9 @@
-.homePage {
-
-
-}
-
-.posts {
-
-}
-
 .post {
     margin: 20px;
     padding: 20px;
     box-shadow: 2px 2px 2px 2px rgb(97, 97, 97);
     border-radius: 10px;
+
 }
 
 .postHeader {
@@ -21,7 +13,10 @@
 
 .postTextContainer {
     padding: 15px 0;
+    word-wrap: break-word;
 }
+
+
 
 .deletePostButton {
     padding: 3px;
