@@ -1,13 +1,15 @@
 .createPostPage {
     width: 100%;
     height: calc(100vh - 80px);
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 80px;
 }
 
 .createPostContainer {
     width: 500px;
+    max-width: 90%;
     height: auto;
     padding: 20px;
     background-color: rgb(227, 227, 227);

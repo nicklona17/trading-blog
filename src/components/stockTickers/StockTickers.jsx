@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import protobuf from 'protobufjs';
 const { Buffer } = require('buffer/');
 
-const emojis = {
+const directionSymbol = {
   '': '',
   'up': '▲',
   'down': '▼',
@@ -77,7 +77,7 @@ function StockTickers() {
       {stocks.map((stock) => (
         <div className="stock" key={stock.id}>
           <h2 className={stock.direction}>
-            {stock.id} {formatPrice(stock.price)} {emojis[stock.direction]}
+            {stock.id} {formatPrice(stock.price)} {directionSymbol[stock.direction]}
           </h2>
         </div>
       ))}

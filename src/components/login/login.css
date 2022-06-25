@@ -11,7 +11,9 @@
 .login-with-google-btn {
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
-    padding: 5px 200px 12px 200px;
+    padding: 5px 0 12px 0;
+    width: 600px;
+    max-width: 90%;
     border: none;
     border-radius: 3px;
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -43,5 +45,11 @@
     background-color: #ebebeb;
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
     cursor: not-allowed;
+  }
+
+  @media (max-width: 400px) {
+    .login-with-google-btn {
+      padding: 5px 70px 12px 70px;
+    }
   }
 
