@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/home/Home';
 import CreatePost from './components/createPost/CreatePost';
 import Login from './components/login/Login';
