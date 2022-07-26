@@ -46,6 +46,7 @@
 
 .inputGroup textarea {
     height: 150px;
+    white-space: pre-line;
 }
 
 .createPostContainer button {
