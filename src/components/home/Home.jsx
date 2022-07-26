@@ -53,9 +53,14 @@ const Home = ({ isAuth }) => {
               <div className="postTextContainer">
                 {post.postText}
               </div>
-              <h4>
-                @{post.author.name}
-              </h4>
+              <div className="postBottomRow">
+                <h4>
+                  @{post.author.name}
+                </h4>
+                <h5>
+                  {new Date(post.createdAt.seconds * 1000).toLocaleDateString("en-US")}
+                </h5>
+              </div>
             </div>
           )
         })}

@@ -16,7 +16,10 @@
     word-wrap: break-word;
 }
 
-
+.postBottomRow {
+  display: flex;
+  justify-content: space-between;
+}
 
 .deletePostButton {
     padding: 3px;
